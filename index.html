@@ -39,7 +39,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=4" />
 
   <!-- Structured data: Medical practice -->
   <script type="application/ld+json">
@@ -268,35 +268,34 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="card__icon"><img src="assets/images/GeneralPracticesms.png" alt="" /></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-6 0h-4V4h4v2zm-1 9h-2v2h-2v-2H7v-2h2v-2h2v2h2v2z"/></svg></div>
             <h3>General Practice</h3>
             <p>Four family practitioners providing trusted day-to-day medical care, check-ups and chronic care for all ages.</p>
+            <button class="card__more" data-modal="modal-gp">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </article>
           <article class="card">
-            <div class="card__icon"><img src="assets/images/Pyshioracticesms.jpg" alt="" /></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 5.5a2 2 0 1 0-2-2 2 2 0 0 0 2 2zM9.8 8.9 6 9.6V13h2V9.6l1.8-.5-.6 3 2.1 2V21h2v-6.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2a4.7 4.7 0 0 1-4.3-2.4l-1-1.6a2 2 0 0 0-1.7-1 1.7 1.7 0 0 0-.8.1z"/></svg></div>
             <h3>Physiotherapy <span class="tag">On site</span></h3>
             <p>Hands-on rehabilitation and pain management to help you move freely and recover after injury or surgery.</p>
-            <p class="card__note">An independent physiotherapy practice located on our premises.</p>
+            <button class="card__more" data-modal="modal-physio">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </article>
           <article class="card">
-            <div class="card__icon"><img src="assets/images/DentistryPracticesms.png" alt="" /></div>
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-2.8 0-4 1-6 1-1.5 0-2 1-2 4 0 2.5.6 4.4 1.3 6.6C6.1 16.1 6.3 21 8 21c1.3 0 1.5-2.5 2-4.5.3-1.2.6-2 1-2s.7.8 1 2c.5 2 .7 4.5 2 4.5 1.7 0 1.9-4.9 2.7-7.4C19.4 11.4 20 9.5 20 7c0-3-.5-4-2-4-2 0-3.2-1-6-1z"/></svg></div>
             <h3>Dentistry <span class="tag">On site</span></h3>
             <p>Cleanings, fillings, extractions, dentures, crowns, bridge work and teeth whitening for a healthy smile.</p>
-            <p class="card__note">An independent dental practice located on our premises.</p>
+            <button class="card__more" data-modal="modal-dental">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </article>
           <article class="card">
-            <div class="card__icon card__icon--mark">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14a1 1 0 0 1 1 1v3l-6 7v5l-4 2v-7L4 7V4a1 1 0 0 1 1-1z"/></svg>
-            </div>
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6.5 7.4 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 9.4 12 2 12 2z"/></svg></div>
             <h3>Pathology</h3>
             <p>On-site diagnostics by JDJ Diagnostics for fast, reliable blood work and laboratory testing.</p>
+            <button class="card__more" data-modal="modal-path">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </article>
           <article class="card">
-            <div class="card__icon card__icon--mark">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 4 4.9V18a3 3 0 0 1-6 0v-1H3v1a5 5 0 0 0 10 0v-3.1A5 5 0 0 0 17 10V7a5 5 0 0 0-5-5zm6 9a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/></svg>
-            </div>
+            <div class="card__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/></svg></div>
             <h3>Nursing Services</h3>
             <p>Three registered nursing sisters providing vaccinations, wound care, screenings and everyday support.</p>
+            <button class="card__more" data-modal="modal-nursing">Learn more <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           </article>
           <article class="card card--cta">
             <h3>Not sure what you need?</h3>
@@ -490,6 +489,153 @@
     </div>
   </footer>
 
+  <!-- Service detail modals -->
+  <div class="modal-root" id="modalRoot" hidden>
+    <div class="modal-backdrop" data-close></div>
+
+    <!-- General Practice -->
+    <div class="modal" id="modal-gp" role="dialog" aria-modal="true" aria-labelledby="modal-gp-title">
+      <button class="modal__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__head">
+        <span class="modal__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm-6 0h-4V4h4v2zm-1 9h-2v2h-2v-2H7v-2h2v-2h2v2h2v2z"/></svg></span>
+        <div><h3 id="modal-gp-title">General Practice</h3><p class="modal__sub">Family medicine for every age and stage</p></div>
+      </div>
+      <div class="modal__body">
+        <p>Our four family practitioners care for all genders and ages, building long-term relationships with the families they look after — from routine check-ups to managing complex, long-term conditions.</p>
+        <h4>What we offer</h4>
+        <ul class="modal__list">
+          <li>Preventive care, routine check-ups and health-risk assessments</li>
+          <li>Screening tests and personalised lifestyle counselling</li>
+          <li>Comprehensive medical check-ups for new patients</li>
+          <li>Family planning and contemporary contraceptive guidance</li>
+        </ul>
+        <h4>Chronic conditions we manage</h4>
+        <ul class="modal__chips">
+          <li>Diabetes</li><li>Hypertension</li><li>Asthma</li><li>Cholesterol</li><li>Epilepsy</li><li>Sleep apnea</li><li>HIV</li>
+        </ul>
+        <h4>Recognition &amp; accreditation</h4>
+        <div class="modal__awards">
+          <img src="assets/images/award-bestofdurban.jpg" alt="Best of Durban Readers' Choice Awards 2024" />
+          <ul class="modal__accred">
+            <li><strong>Best of Durban</strong> · Readers' Choice Awards 2024</li>
+            <li><strong>Accredited diabetes care</strong> · affiliated with the SA Centre for Diabetes</li>
+            <li><strong>Syntro-P Health Centre of Excellence</strong></li>
+          </ul>
+        </div>
+        <a href="#appointments" class="btn btn--primary modal__cta" data-close>Book a GP appointment</a>
+      </div>
+    </div>
+
+    <!-- Physiotherapy -->
+    <div class="modal" id="modal-physio" role="dialog" aria-modal="true" aria-labelledby="modal-physio-title">
+      <button class="modal__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__head">
+        <span class="modal__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 5.5a2 2 0 1 0-2-2 2 2 0 0 0 2 2zM9.8 8.9 6 9.6V13h2V9.6l1.8-.5-.6 3 2.1 2V21h2v-6.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2a4.7 4.7 0 0 1-4.3-2.4l-1-1.6a2 2 0 0 0-1.7-1 1.7 1.7 0 0 0-.8.1z"/></svg></span>
+        <div><h3 id="modal-physio-title">Physiotherapy <span class="tag">On site · independent</span></h3><p class="modal__sub">Movement, recovery and pain relief</p></div>
+      </div>
+      <div class="modal__body">
+        <p>A dedicated physiotherapy practice located on our premises, offering hands-on assessment and treatment to help you move freely and recover well.</p>
+        <h4>Treatments &amp; techniques</h4>
+        <ul class="modal__chips">
+          <li>Joint mobilisation</li><li>Myofascial release</li><li>Craniosacral release</li><li>Neural mobilisation</li><li>Massage</li><li>Dry needling</li><li>Kinesiotaping</li><li>Exercise therapy</li><li>Scar release</li>
+        </ul>
+        <h4>Conditions treated</h4>
+        <ul class="modal__list">
+          <li>Back &amp; neck pain, headaches and TMJ dysfunction</li>
+          <li>Sprains, strains, tears and joint problems</li>
+          <li>Sports injuries, whiplash and orthopaedic conditions</li>
+          <li>Post-operative rehabilitation</li>
+        </ul>
+        <div class="modal__provider">
+          <div>
+            <strong>Dr Pam Dawson</strong>
+            <span>Physiotherapist · independent practice</span>
+          </div>
+          <a href="tel:+27317633892" class="btn btn--outline">031 763 3892</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dentistry -->
+    <div class="modal" id="modal-dental" role="dialog" aria-modal="true" aria-labelledby="modal-dental-title">
+      <button class="modal__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__head">
+        <span class="modal__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-2.8 0-4 1-6 1-1.5 0-2 1-2 4 0 2.5.6 4.4 1.3 6.6C6.1 16.1 6.3 21 8 21c1.3 0 1.5-2.5 2-4.5.3-1.2.6-2 1-2s.7.8 1 2c.5 2 .7 4.5 2 4.5 1.7 0 1.9-4.9 2.7-7.4C19.4 11.4 20 9.5 20 7c0-3-.5-4-2-4-2 0-3.2-1-6-1z"/></svg></span>
+        <div><h3 id="modal-dental-title">Dentistry <span class="tag">On site · independent</span></h3><p class="modal__sub">Healthy smiles for the whole family</p></div>
+      </div>
+      <div class="modal__body">
+        <p>An independent dental practice on our premises, offering everything from routine care to more advanced treatments and emergencies.</p>
+        <h4>What we offer</h4>
+        <ul class="modal__chips">
+          <li>Routine exams</li><li>Cleanings</li><li>Fillings</li><li>Extractions</li><li>Dentures</li><li>Crowns</li><li>Bridges</li><li>Teeth whitening</li><li>Emergency endodontics</li><li>Paediatric dentistry</li><li>Tooth jewellery</li>
+        </ul>
+        <div class="modal__provider">
+          <div>
+            <strong>Dr Sarika Seetal</strong>
+            <span>Dentist · independent practice</span>
+          </div>
+          <a href="tel:+27317633164" class="btn btn--outline">031 763 3164</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pathology -->
+    <div class="modal" id="modal-path" role="dialog" aria-modal="true" aria-labelledby="modal-path-title">
+      <button class="modal__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__head">
+        <span class="modal__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6.5 7.4 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 9.4 12 2 12 2z"/></svg></span>
+        <div><h3 id="modal-path-title">Pathology</h3><p class="modal__sub">Fast, reliable diagnostics on site</p></div>
+      </div>
+      <div class="modal__body">
+        <p>In partnership with JDJ Diagnostics, we offer comprehensive, cost-effective laboratory testing right here at the centre.</p>
+        <h4>What to expect</h4>
+        <ul class="modal__list">
+          <li>Comprehensive, cost-effective medical diagnostics</li>
+          <li>Technologists with 70+ years of combined laboratory experience</li>
+          <li>Pathologist support for diagnosis and treatment planning</li>
+          <li>All blood draws performed by Link Hills staff at the facility</li>
+        </ul>
+        <div class="modal__provider">
+          <div>
+            <strong>JDJ Diagnostics</strong>
+            <span>Laboratory &amp; pathology partner</span>
+          </div>
+          <img class="modal__partner-logo" src="assets/images/JDJ_logo_fullC.jpg" alt="JDJ Diagnostics" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Nursing -->
+    <div class="modal" id="modal-nursing" role="dialog" aria-modal="true" aria-labelledby="modal-nursing-title">
+      <button class="modal__close" data-close aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__head">
+        <span class="modal__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54z"/></svg></span>
+        <div><h3 id="modal-nursing-title">Nursing Services</h3><p class="modal__sub">Everyday care and support</p></div>
+      </div>
+      <div class="modal__body">
+        <p>Our three registered nursing sisters work alongside the doctors to deliver attentive, hands-on care for patients of all ages.</p>
+        <h4>What we offer</h4>
+        <ul class="modal__list">
+          <li>Vaccinations, wound care and health screenings</li>
+          <li>New-patient assessments: measurements, urine testing and blood screening</li>
+          <li>Lifestyle questionnaires and practical health advice</li>
+          <li>Close collaboration with your doctor for joined-up care</li>
+        </ul>
+        <a href="#appointments" class="btn btn--primary modal__cta" data-close>Book an appointment</a>
+      </div>
+    </div>
+  </div>
+
   <a href="#home" class="to-top" id="toTop" aria-label="Back to top">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l-6 6 1.4 1.4L12 10.8l4.6 4.6L18 14z"/></svg>
   </a>
@@ -524,6 +670,6 @@
   }
   </script>
 
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
 </html>

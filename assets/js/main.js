@@ -35,6 +35,44 @@
     });
   }
 
+  /* Service detail modals */
+  var modalRoot = document.getElementById("modalRoot");
+  if (modalRoot) {
+    var lastFocused = null;
+    function openModal(id) {
+      var modal = document.getElementById(id);
+      if (!modal) return;
+      lastFocused = document.activeElement;
+      modalRoot.removeAttribute("hidden");
+      modal.classList.add("is-open");
+      document.body.classList.add("modal-open");
+      // force reflow so the transition runs, then fade in
+      void modalRoot.offsetWidth;
+      modalRoot.classList.add("open");
+      var closeBtn = modal.querySelector(".modal__close");
+      if (closeBtn) closeBtn.focus();
+    }
+    function closeModal() {
+      var open = modalRoot.querySelector(".modal.is-open");
+      modalRoot.classList.remove("open");
+      document.body.classList.remove("modal-open");
+      window.setTimeout(function () {
+        modalRoot.setAttribute("hidden", "");
+        if (open) open.classList.remove("is-open");
+      }, 250);
+      if (lastFocused) lastFocused.focus();
+    }
+    document.querySelectorAll("[data-modal]").forEach(function (btn) {
+      btn.addEventListener("click", function () { openModal(btn.getAttribute("data-modal")); });
+    });
+    modalRoot.querySelectorAll("[data-close]").forEach(function (el) {
+      el.addEventListener("click", closeModal);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !modalRoot.hasAttribute("hidden")) closeModal();
+    });
+  }
+
   /* Sticky header shadow + back-to-top visibility */
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
