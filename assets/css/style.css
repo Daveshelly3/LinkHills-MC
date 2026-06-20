@@ -251,8 +251,15 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--
 .card__icon img { width: 52px; height: 52px; object-fit: contain; }
 .card__icon--mark { background: var(--green-100); }
 .card__icon--mark svg { width: 36px; height: 36px; fill: var(--green-600); }
-.card h3 { font-size: 1.28rem; margin-bottom: 10px; }
+.card h3 { font-size: 1.28rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .card p { color: var(--muted); font-size: .98rem; }
+.card__note { margin-top: 10px; font-size: .85rem; color: var(--blue-600); font-style: italic; }
+.tag {
+  font-family: var(--font-head); font-weight: 600; font-size: .68rem;
+  text-transform: uppercase; letter-spacing: .06em;
+  color: var(--green-600); background: var(--green-100);
+  padding: 3px 9px; border-radius: 999px;
+}
 .card--cta {
   background: var(--grad); color: #fff; display: flex; flex-direction: column;
   align-items: flex-start; justify-content: center;
@@ -278,7 +285,14 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--
 .doctor__photo--initials { display: grid; place-items: center; background: var(--grad); border-color: #fff; }
 .doctor__photo--initials span { font-family: var(--font-head); font-weight: 800; font-size: 3rem; color: #fff; }
 .doctor h3 { font-size: 1.12rem; margin-bottom: 4px; }
-.doctor span { color: var(--blue-600); font-weight: 600; font-size: .9rem; font-family: var(--font-head); }
+.doctor span { display: block; color: var(--blue-600); font-weight: 600; font-size: .9rem; font-family: var(--font-head); }
+.doctor__book {
+  display: inline-block; margin-top: 14px; font-family: var(--font-head);
+  font-weight: 600; font-size: .9rem; color: var(--green-600);
+  padding: 8px 18px; border-radius: 999px; background: var(--green-100);
+  transition: background .2s, color .2s, transform .2s;
+}
+.doctor__book:hover { background: var(--green-600); color: #fff; transform: translateY(-2px); }
 
 /* ---------- Appointments ---------- */
 .appointments { background: var(--blue-900); position: relative; overflow: hidden; }
@@ -294,19 +308,22 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--
 .appointments__list svg { width: 22px; height: 22px; fill: var(--green-500); flex: none; }
 .appointments__actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.booking-card { background: #fff; border-radius: var(--radius-lg); padding: 34px; box-shadow: var(--shadow-lg); }
-.booking-card h3 { font-size: 1.4rem; margin-bottom: 20px; }
-.booking-card label { display: block; font-family: var(--font-head); font-weight: 600; font-size: .88rem; color: var(--ink); margin-bottom: 16px; }
-.booking-card input, .booking-card select {
-  width: 100%; margin-top: 7px; padding: 12px 14px;
-  border: 1px solid var(--line); border-radius: 12px;
-  font-family: var(--font-body); font-size: .96rem; color: var(--ink);
-  background: var(--bg-soft); transition: border-color .2s, box-shadow .2s;
+.booking-card { background: #fff; border-radius: var(--radius-lg); padding: 30px; box-shadow: var(--shadow-lg); }
+.booking-card h3 { font-size: 1.4rem; margin-bottom: 6px; }
+.booking-card__intro { color: var(--muted); font-size: .95rem; margin-bottom: 20px; }
+.book-row {
+  display: flex; align-items: center; gap: 14px; padding: 12px 14px;
+  border: 1px solid var(--line); border-radius: 14px; margin-bottom: 12px;
+  transition: border-color .2s, box-shadow .2s, transform .2s, background .2s;
 }
-.booking-card input:focus, .booking-card select:focus {
-  outline: none; border-color: var(--blue-600); box-shadow: 0 0 0 3px var(--blue-100); background: #fff;
-}
-.booking-card__note { font-size: .82rem; color: var(--muted); margin-top: 14px; text-align: center; }
+.book-row:hover { border-color: var(--blue-600); box-shadow: var(--shadow-sm); transform: translateY(-2px); background: var(--bg-soft); }
+.book-row__avatar { width: 48px; height: 48px; flex: none; border-radius: 50%; overflow: hidden; border: 2px solid var(--blue-100); }
+.book-row__avatar img { width: 100%; height: 100%; object-fit: cover; }
+.book-row__text { flex: 1; line-height: 1.3; }
+.book-row__text strong { display: block; font-family: var(--font-head); font-size: .98rem; }
+.book-row__text small { color: var(--muted); font-size: .82rem; }
+.book-row__cta { font-family: var(--font-head); font-weight: 600; font-size: .9rem; color: var(--blue-700); white-space: nowrap; }
+.booking-card__note { font-size: .82rem; color: var(--muted); margin-top: 16px; text-align: center; }
 
 /* ---------- FAQ ---------- */
 .faq__inner { display: grid; grid-template-columns: .85fr 1.15fr; gap: 56px; align-items: start; }

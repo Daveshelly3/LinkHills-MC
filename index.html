@@ -30,7 +30,7 @@
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 10.4 3.5 2-.8 1.3L11 13V6.5h2z"/></svg>
           Mon–Fri 7:30–17:00 · Sat 8:00–12:00
         </span>
-        <a href="#appointments" class="topbar__item topbar__item--accent">Book online</a>
+        <a href="#appointments" class="topbar__item topbar__item--accent">Book online via RecoMed</a>
       </div>
     </div>
   </div>
@@ -161,13 +161,15 @@
           </article>
           <article class="card">
             <div class="card__icon"><img src="assets/images/Pyshioracticesms.jpg" alt="" /></div>
-            <h3>Physiotherapy</h3>
+            <h3>Physiotherapy <span class="tag">On site</span></h3>
             <p>Hands-on rehabilitation and pain management to help you move freely and recover after injury or surgery.</p>
+            <p class="card__note">An independent physiotherapy practice located on our premises.</p>
           </article>
           <article class="card">
             <div class="card__icon"><img src="assets/images/DentistryPracticesms.png" alt="" /></div>
-            <h3>Dentistry</h3>
+            <h3>Dentistry <span class="tag">On site</span></h3>
             <p>Cleanings, fillings, extractions, dentures, crowns, bridge work and teeth whitening for a healthy smile.</p>
+            <p class="card__note">An independent dental practice located on our premises.</p>
           </article>
           <article class="card">
             <div class="card__icon card__icon--mark">
@@ -205,21 +207,24 @@
             <div class="doctor__photo"><img src="assets/images/SeanDuffey.png" alt="Dr Sean Duffey" /></div>
             <h3>Dr Sean Duffey</h3>
             <span>General Practitioner</span>
+            <a class="doctor__book" href="https://www.recomed.co.za/general-practitioner/durban/sean-duffey/32449/40633/" target="_blank" rel="noopener">Book online →</a>
           </article>
           <article class="doctor">
             <div class="doctor__photo"><img src="assets/images/CarrieGrinaker.png" alt="Dr Carrie-Anne Grinaker" /></div>
             <h3>Dr Carrie-Anne Grinaker</h3>
             <span>General Practitioner</span>
+            <a class="doctor__book" href="https://www.recomed.co.za/general-practitioner/durban/carrie-anne-grinaker/32449/40629/" target="_blank" rel="noopener">Book online →</a>
           </article>
           <article class="doctor">
             <div class="doctor__photo"><img src="assets/images/Duvel.png" alt="Dr Heidi Duvel" /></div>
             <h3>Dr Heidi Duvel</h3>
             <span>General Practitioner</span>
+            <a class="doctor__book" href="https://www.recomed.co.za/general-practitioner/durban/heidi-duvel/32449/40623/" target="_blank" rel="noopener">Book online →</a>
           </article>
           <article class="doctor doctor--placeholder">
             <div class="doctor__photo doctor__photo--initials"><span>S</span></div>
             <h3>Dr Seetal</h3>
-            <span>Dentist</span>
+            <span>Dentist · On-site (independent)</span>
           </article>
         </div>
       </div>
@@ -231,10 +236,10 @@
         <div class="appointments__content">
           <span class="eyebrow eyebrow--light">Appointments</span>
           <h2>Book a time that suits your family</h2>
-          <p>Registered patients can request appointments online, or simply give our reception team a call. We'll find a slot that works for you.</p>
+          <p>Appointments with our family practitioners are booked online through RecoMed — choose your doctor below to see live availability and confirm in a few clicks. Prefer to talk? Our reception team is always happy to help.</p>
           <ul class="appointments__list">
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Online booking for registered patients</li>
-            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Same-week appointments where possible</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Secure online booking powered by RecoMed</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Real-time availability for each doctor</li>
             <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg> Friendly help over the phone</li>
           </ul>
           <div class="appointments__actions">
@@ -242,24 +247,26 @@
             <a href="mailto:office@linkhillsmedical.co.za" class="btn btn--ghost-light btn--lg">Email us</a>
           </div>
         </div>
-        <form class="booking-card" onsubmit="return false;">
-          <h3>Request an appointment</h3>
-          <label>Full name<input type="text" placeholder="Your name" required /></label>
-          <label>Phone number<input type="tel" placeholder="031 000 0000" required /></label>
-          <label>Service
-            <select required>
-              <option value="" disabled selected>Choose a service</option>
-              <option>General Practice</option>
-              <option>Physiotherapy</option>
-              <option>Dentistry</option>
-              <option>Pathology</option>
-              <option>Nursing Services</option>
-            </select>
-          </label>
-          <label>Preferred date<input type="date" /></label>
-          <button type="submit" class="btn btn--primary btn--block">Request appointment</button>
-          <p class="booking-card__note">For registered patients. We'll call to confirm your booking.</p>
-        </form>
+        <div class="booking-card">
+          <h3>Book with your doctor</h3>
+          <p class="booking-card__intro">Select a family practitioner to book online via RecoMed.</p>
+          <a class="book-row" href="https://www.recomed.co.za/general-practitioner/durban/sean-duffey/32449/40633/" target="_blank" rel="noopener">
+            <span class="book-row__avatar"><img src="assets/images/SeanDuffey.png" alt="" /></span>
+            <span class="book-row__text"><strong>Dr Sean Duffey</strong><small>General Practitioner</small></span>
+            <span class="book-row__cta">Book →</span>
+          </a>
+          <a class="book-row" href="https://www.recomed.co.za/general-practitioner/durban/carrie-anne-grinaker/32449/40629/" target="_blank" rel="noopener">
+            <span class="book-row__avatar"><img src="assets/images/CarrieGrinaker.png" alt="" /></span>
+            <span class="book-row__text"><strong>Dr Carrie-Anne Grinaker</strong><small>General Practitioner</small></span>
+            <span class="book-row__cta">Book →</span>
+          </a>
+          <a class="book-row" href="https://www.recomed.co.za/general-practitioner/durban/heidi-duvel/32449/40623/" target="_blank" rel="noopener">
+            <span class="book-row__avatar"><img src="assets/images/Duvel.png" alt="" /></span>
+            <span class="book-row__text"><strong>Dr Heidi Duvel</strong><small>General Practitioner</small></span>
+            <span class="book-row__cta">Book →</span>
+          </a>
+          <p class="booking-card__note">Physiotherapy and dentistry are independent practices on our premises — please contact them directly to book.</p>
+        </div>
       </div>
     </section>
 
@@ -277,12 +284,12 @@
             <div class="accordion__body"><p>We're open Monday to Friday from 07:30 to 17:00, and Saturdays from 08:00 to 12:00. We're closed on Sundays and public holidays.</p></div>
           </details>
           <details class="accordion__item">
-            <summary>Do I need to be registered to book online?</summary>
-            <div class="accordion__body"><p>Online appointment booking is available to registered patients. If you're new, please call reception on 031 763 3834 and we'll get you set up.</p></div>
+            <summary>How do I book an appointment?</summary>
+            <div class="accordion__body"><p>Appointments with our family practitioners are booked online through RecoMed — just pick your doctor in the Appointments section to see live availability. You're also welcome to call reception on 031 763 3834.</p></div>
           </details>
           <details class="accordion__item">
             <summary>Which services are available on site?</summary>
-            <div class="accordion__body"><p>General practice, physiotherapy, dentistry, on-site pathology by JDJ Diagnostics, and nursing services — all in one location.</p></div>
+            <div class="accordion__body"><p>General practice, on-site pathology by JDJ Diagnostics, and nursing services are part of the practice. Physiotherapy and dentistry are independent practices located on our premises — please contact them directly to book.</p></div>
           </details>
           <details class="accordion__item">
             <summary>Where are you located?</summary>
