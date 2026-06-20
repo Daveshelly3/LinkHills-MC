@@ -5,6 +5,7 @@
   var header = document.getElementById("header");
   var nav = document.getElementById("nav");
   var navToggle = document.getElementById("navToggle");
+  var navBackdrop = document.getElementById("navBackdrop");
   var toTop = document.getElementById("toTop");
   var yearEl = document.getElementById("year");
 
@@ -18,6 +19,7 @@
     document.body.classList.remove("nav-open");
   }
   if (navToggle) {
+    if (navBackdrop) navBackdrop.removeAttribute("hidden");
     navToggle.addEventListener("click", function () {
       var open = nav.classList.toggle("open");
       navToggle.classList.toggle("open", open);
@@ -26,6 +28,10 @@
     });
     nav.querySelectorAll("a").forEach(function (a) {
       a.addEventListener("click", closeNav);
+    });
+    if (navBackdrop) navBackdrop.addEventListener("click", closeNav);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeNav();
     });
   }
 
