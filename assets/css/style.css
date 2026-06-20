@@ -207,34 +207,35 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--
 .about__inner { display: grid; grid-template-columns: .95fr 1.05fr; gap: 60px; align-items: center; }
 .about__media { position: relative; }
 .about__panel {
+  position: relative;
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg); overflow: hidden;
+  box-shadow: var(--shadow-lg);
 }
 .about__panel-head {
   display: flex; align-items: center; gap: 12px;
   background: var(--blue-700); color: #fff; padding: 22px 28px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
-.about__panel-head svg { width: 26px; height: 26px; fill: #fff; }
+.about__panel-head svg { width: 26px; height: 26px; fill: #fff; flex: none; }
 .about__panel-head h3 { color: #fff; font-size: 1.35rem; }
 .about__services { list-style: none; padding: 10px 28px; }
 .about__services li { display: flex; align-items: center; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--line); font-family: var(--font-head); font-weight: 600; color: var(--ink); }
 .about__services li:last-child { border-bottom: 0; }
-.about__services-icon { width: 44px; height: 44px; flex: none; border-radius: 12px; background: var(--blue-100); display: grid; place-items: center; overflow: hidden; }
-.about__services-icon img { width: 30px; height: 30px; object-fit: contain; }
-.about__services-icon--mark { background: var(--green-100); }
-.about__services-icon--mark svg { width: 22px; height: 22px; fill: var(--green-600); }
+.about__services-icon { width: 44px; height: 44px; flex: none; border-radius: 12px; background: var(--blue-100); display: grid; place-items: center; }
+.about__services-icon svg { width: 24px; height: 24px; fill: var(--blue-700); }
 .about__panel-foot {
   display: flex; align-items: center; gap: 10px;
   background: var(--bg-soft); padding: 18px 28px; color: var(--muted); font-size: .92rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 .about__panel-foot svg { width: 20px; height: 20px; fill: var(--green-600); flex: none; }
 .about__badge {
-  position: absolute; right: -14px; bottom: -22px;
-  background: var(--green-600); color: #fff; padding: 18px 24px; border-radius: 18px;
-  box-shadow: var(--shadow-md);
+  position: absolute; right: -12px; top: -18px;
+  background: var(--green-600); color: #fff; padding: 14px 20px; border-radius: 16px;
+  box-shadow: var(--shadow-md); text-align: right;
 }
-.about__badge strong { display: block; font-family: var(--font-head); font-size: 1.15rem; }
-.about__badge span { font-size: .85rem; opacity: .9; }
+.about__badge strong { display: block; font-family: var(--font-head); font-size: 1.1rem; }
+.about__badge span { font-size: .82rem; opacity: .92; }
 .about__content h2 { font-size: clamp(1.8rem, 3.4vw, 2.5rem); font-weight: 800; letter-spacing: -.02em; margin-bottom: 18px; }
 .about__content p { color: var(--muted); margin-bottom: 24px; }
 .checklist { list-style: none; display: grid; gap: 12px; margin-bottom: 30px; }
