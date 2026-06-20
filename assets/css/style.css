@@ -359,6 +359,13 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; color: var(--
 .footer__inner { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 36px; padding-bottom: 48px; }
 .footer__brand img { height: 50px; background: #fff; padding: 8px 12px; border-radius: 12px; margin-bottom: 18px; }
 .footer__brand p { font-size: .95rem; max-width: 320px; }
+.footer__social { display: flex; gap: 10px; margin-top: 18px; }
+.footer__social a { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.1); transition: background .2s, transform .2s; }
+.footer__social a:hover { background: var(--green-500); transform: translateY(-2px); }
+.footer__social svg { width: 20px; height: 20px; fill: #fff; }
+.footer__legal { display: flex; gap: 18px; flex-wrap: wrap; }
+.footer__legal a { color: rgba(255,255,255,.78); transition: color .2s; }
+.footer__legal a:hover { color: var(--green-500); }
 .footer__col h4 { color: #fff; font-size: 1.02rem; margin-bottom: 16px; }
 .footer__col a { display: block; padding: 5px 0; color: rgba(255,255,255,.78); transition: color .2s; }
 .footer__col a:hover { color: var(--green-500); }
