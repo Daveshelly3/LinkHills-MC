@@ -32,7 +32,19 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; overflow-x: clip; }
+
+/* Keyboard accessibility: clear focus ring for keyboard users */
+:focus-visible { outline: 3px solid var(--blue-500); outline-offset: 2px; border-radius: 4px; }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}
 
 body {
   font-family: var(--font-body);
@@ -40,6 +52,7 @@ body {
   background: var(--bg);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip; /* contain the off-canvas mobile drawer without breaking sticky header */
 }
 
 img { max-width: 100%; display: block; }
